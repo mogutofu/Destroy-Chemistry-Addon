@@ -7,10 +7,10 @@ modId="dchem"
 version="1.2.1"
 displayName="Destroy Chemistry Addon"
 # The URL for your source repository. Currently points at the local nginx mirror
-# (D:\nginx\aimcclient\dchem). After uploading the project to GitHub, change this to
+# (D:\nginx\dchem, port 35765). After uploading the project to GitHub, change this to
 # https://github.com/<your-username>/<repo-name> and rebuild the jar.
-displayURL="http://192.168.2.61:35770/dchem/"
-issueTrackerURL="http://192.168.2.61:35770/dchem/"
+displayURL="http://192.168.2.61:35765/"
+issueTrackerURL="http://192.168.2.61:35765/"
 description='''Destroy (NHblock714 fork 1.21.1) chemistry addon:
 - 1 Na+ + 1 Cl- (brine) -> northstar:salt, cobblestone-catalyzed, needs heat
 - Carbonate chemistry: carbonate/bicarbonate/carbonic acid + precipitations + salts
