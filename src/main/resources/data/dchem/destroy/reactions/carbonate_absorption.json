@@ -1,0 +1,13 @@
+{
+  "reactants": [
+    { "molecule": "dchem:carbonate", "ratio": 1 },
+    { "molecule": "destroy:carbon_dioxide", "ratio": 1 },
+    { "molecule": "destroy:water", "ratio": 1 }
+  ],
+  "products": [
+    { "molecule": "dchem:bicarbonate", "ratio": 2 }
+  ],
+  "kinetics": {
+    "activation_energy": 10.0
+  }
+}

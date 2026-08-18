@@ -33,10 +33,12 @@
 `dchem:carbonic_acid`（H₂CO₃）。强电解质盐类不再制作分子（溶液中的离子对由
 Destroy 自带盐命名系统显示，如"碳酸钠"）。
 
-全部 13 个反应（均满足电荷守恒，JEI 反应页可见，悬停有中文描述）：
+全部 15 个反应（均满足电荷守恒，JEI 反应页可见，悬停有中文描述）：
 
 | 反应 | 说明 |
 |---|---|
+| **2OH⁻ + CO₂ → CO₃²⁻ + H₂O** | **碱液吸收二氧化碳（消耗氢氧根）** |
+| **CO₃²⁻ + CO₂ + H₂O → 2HCO₃⁻** | **氢氧根耗尽后碳酸根继续吸碳变碳酸氢根** |
 | H⁺ + CO₃²⁻ → HCO₃⁻ | 碳酸根质子化 |
 | 2H⁺ + CO₃²⁻ → CO₂↑ + H₂O | 碳酸根遇酸放出二氧化碳 |
 | H⁺ + HCO₃⁻ → CO₂↑ + H₂O | 碳酸氢根遇酸 |
@@ -65,7 +67,7 @@ Destroy 自带盐命名系统显示，如"碳酸钠"）。
 
 1. **服务端**：`dchem-1.2.1.jar` 放入 `mods/`，重启服务器。
    日志应出现 `Loaded 4 datapack molecule(s); 0 skipped.` 与
-   `Loaded 17 datapack reaction(s); 0 skipped.`。
+   `Loaded 19 datapack reaction(s); 0 skipped.`。
 2. **客户端（建议）**：同一个 jar 放入客户端 mods，重启客户端。
    JEI 反应分类页出现全部新反应（悬停显示中文描述），点击任意相关物品可用 U/R 反查。
 3. 改动 JSON 后：服务端 `/reload`；客户端 F3+T 重载资源。
