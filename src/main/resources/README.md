@@ -1,4 +1,4 @@
-# Destroy Chemistry Addon (dchem) v1.2.1
+﻿# Destroy Chemistry Addon (dchem) v1.3.0
 
 为 Destroy（NHblock714 分支 1.21.1）增加化学内容的 NeoForge 模组。
 
@@ -65,7 +65,7 @@ Destroy 自带盐命名系统显示，如"碳酸钠"）。
 
 ## 安装
 
-1. **服务端**：`dchem-1.2.1.jar` 放入 `mods/`，重启服务器。
+1. **服务端**：`dchem-1.3.0.jar` 放入 `mods/`，重启服务器。
    日志应出现 `Loaded 4 datapack molecule(s); 0 skipped.` 与
    `Loaded 19 datapack reaction(s); 0 skipped.`。
 2. **客户端（建议）**：同一个 jar 放入客户端 mods，重启客户端。
@@ -87,5 +87,5 @@ assets/dchem/lang/*.json                        （中英文名与反应描述�
 ```
 D:\server\dev\dchem-mod\         gradle 工程（moddev 2.0.74 / NeoForge 21.1.248）
 D:\server\dev\dchem\             纯数据包源（JSON 的事实来源，改这里）
-构建：gradlew build  →  build/libs/dchem-1.2.1.jar
+构建：gradlew build  →  build/libs/dchem-1.3.0.jar
 ```
