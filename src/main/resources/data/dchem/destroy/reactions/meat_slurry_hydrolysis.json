@@ -1,0 +1,20 @@
+{
+  "reactants": [
+    { "molecule": "dchem:meat_slurry", "ratio": 1 }
+  ],
+  "catalysts": [
+    { "molecule": "destroy:hydroxide", "order": 1 }
+  ],
+  "products": [
+    { "molecule": "destroy:glycerol", "ratio": 1 }
+  ],
+  "kinetics": {
+    "activation_energy": 15.0
+  },
+  "result": {
+    "type": "destroy:precipitate_item",
+    "moles": 1.0,
+    "item": "minecraft:rotten_flesh",
+    "count": 1
+  }
+}

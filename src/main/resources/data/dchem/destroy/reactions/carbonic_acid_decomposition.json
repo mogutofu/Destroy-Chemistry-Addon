@@ -1,0 +1,12 @@
+{
+  "reactants": [
+    { "molecule": "dchem:carbonic_acid", "ratio": 1 }
+  ],
+  "products": [
+    { "molecule": "destroy:carbon_dioxide", "ratio": 1 },
+    { "molecule": "destroy:water", "ratio": 1 }
+  ],
+  "kinetics": {
+    "activation_energy": 15.0
+  }
+}

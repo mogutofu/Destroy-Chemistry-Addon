@@ -1,0 +1,55 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="dchem"
+version="1.2.1"
+displayName="Destroy Chemistry Addon"
+# The URL for your source repository. Currently points at the local nginx mirror
+# (D:\nginx\aimcclient\dchem). After uploading the project to GitHub, change this to
+# https://github.com/<your-username>/<repo-name> and rebuild the jar.
+displayURL="http://192.168.2.61:35770/dchem/"
+issueTrackerURL="http://192.168.2.61:35770/dchem/"
+description='''Destroy (NHblock714 fork 1.21.1) chemistry addon:
+- 1 Na+ + 1 Cl- (brine) -> northstar:salt, cobblestone-catalyzed, needs heat
+- Carbonate chemistry: carbonate/bicarbonate/carbonic acid + precipitations + salts
+- Meat hydrolysis: pork/beef + (distilled) water -> rotten flesh + glycerol
+Gameplay runs server-side via Destroy's datapack chemistry system. Installing the jar on
+the client adds JEI display, tooltips and Chinese names for the new molecules/reactions.'''
+authors="dchem"
+
+[[dependencies.dchem]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.200,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dchem]]
+    modId="create"
+    type="required"
+    versionRange="[6.0.10,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dchem]]
+    modId="petrolpark"
+    type="required"
+    versionRange="[1.5.0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dchem]]
+    modId="destroy"
+    type="required"
+    versionRange="[0.4.1,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dchem]]
+    modId="northstar"
+    type="required"
+    versionRange="[0.6.4,)"
+    ordering="NONE"
+    side="BOTH"

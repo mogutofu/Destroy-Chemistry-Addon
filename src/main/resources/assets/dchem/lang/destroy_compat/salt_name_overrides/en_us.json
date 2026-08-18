@@ -1,0 +1,12 @@
+{
+  "dchem:carbonate": {
+    "generic": "dchem.salt.carbonate",
+    "specifics": {
+      "destroy:sodium_ion": "dchem.salt.sodium_carbonate",
+      "destroy:potassium_ion": "dchem.salt.potassium_carbonate",
+      "destroy:calcium_ion": "dchem.salt.calcium_carbonate",
+      "destroy:ammonium": "dchem.salt.ammonium_carbonate",
+      "destroy:copper_ii": "dchem.salt.copper_carbonate"
+    }
+  }
+}

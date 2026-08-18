@@ -1,0 +1,11 @@
+{
+  "item_reactants": [
+    { "tag": "dchem:raw_meat", "catalyst": false, "moles": 1.0 }
+  ],
+  "products": [
+    { "molecule": "dchem:meat_slurry", "ratio": 1 }
+  ],
+  "kinetics": {
+    "activation_energy": 10.0
+  }
+}

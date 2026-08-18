@@ -1,0 +1,13 @@
+{
+  "reactants": [
+    { "molecule": "dchem:carbonate", "ratio": 1 }
+  ],
+  "products": [
+    { "molecule": "destroy:carbon_dioxide", "ratio": 1 },
+    { "molecule": "destroy:oxide", "ratio": 1 }
+  ],
+  "kinetics": {
+    "activation_energy": 60.0,
+    "preexponential_factor": 10000.0
+  }
+}

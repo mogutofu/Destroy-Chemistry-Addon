@@ -1,0 +1,15 @@
+{
+  "reactants": [
+    { "molecule": "destroy:calcium_ion", "ratio": 1 },
+    { "molecule": "dchem:carbonate", "ratio": 1 }
+  ],
+  "kinetics": {
+    "activation_energy": 15.0
+  },
+  "result": {
+    "type": "destroy:precipitate_item",
+    "moles": 1.0,
+    "item": "destroy:chalk_dust",
+    "count": 1
+  }
+}

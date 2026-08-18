@@ -1,0 +1,12 @@
+{
+  "reactants": [
+    { "molecule": "destroy:proton", "ratio": 1 },
+    { "molecule": "dchem:bicarbonate", "ratio": 1 }
+  ],
+  "products": [
+    { "molecule": "dchem:carbonic_acid", "ratio": 1 }
+  ],
+  "kinetics": {
+    "activation_energy": 5.0
+  }
+}

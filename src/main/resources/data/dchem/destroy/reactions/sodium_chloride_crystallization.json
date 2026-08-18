@@ -1,0 +1,19 @@
+{
+  "reactants": [
+    { "molecule": "destroy:sodium_ion", "ratio": 1 },
+    { "molecule": "destroy:chloride", "ratio": 1 }
+  ],
+  "item_reactants": [
+    { "item": "minecraft:cobblestone", "catalyst": true, "moles": 1.0 }
+  ],
+  "kinetics": {
+    "activation_energy": 40.0,
+    "preexponential_factor": 10000.0
+  },
+  "result": {
+    "type": "destroy:precipitate_item",
+    "moles": 1.0,
+    "item": "northstar:salt",
+    "count": 1
+  }
+}

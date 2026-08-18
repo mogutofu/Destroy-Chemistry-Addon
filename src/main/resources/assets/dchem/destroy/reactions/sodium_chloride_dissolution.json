@@ -1,0 +1,15 @@
+{
+  "reactants": [
+    { "molecule": "destroy:water", "ratio": 1 }
+  ],
+  "item_reactants": [
+    { "item": "northstar:salt", "catalyst": false, "moles": 1.0 }
+  ],
+  "products": [
+    { "molecule": "destroy:sodium_ion", "ratio": 1 },
+    { "molecule": "destroy:chloride", "ratio": 1 }
+  ],
+  "kinetics": {
+    "activation_energy": 10.0
+  }
+}

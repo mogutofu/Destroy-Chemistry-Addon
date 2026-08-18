@@ -1,0 +1,66 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.74'
+}
+
+version = '1.2.1'
+group = 'dchem'
+
+base {
+    archivesName = 'dchem'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    maven { url = 'https://maven.neoforged.net/releases' }
+    maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel, Catnip
+    maven { url = "https://maven.blamejared.com" } // JEI
+    maven { url = "https://mvn.devos.one/snapshots" } // Registrate
+    maven { url = "https://maven.theillusivec4.top/" } // Curios
+    exclusiveContent {
+        forRepository {
+            maven { name = "Modrinth"; url = "https://api.modrinth.com/maven" }
+        }
+        filter { includeGroup "maven.modrinth" }
+    }
+    flatDir { dirs 'libs' }
+}
+
+neoForge {
+    // Match the version running on the target server.
+    version = '21.1.248'
+
+    runs {
+        client { client() }
+        server { server() }
+    }
+
+    mods {
+        dchem {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+dependencies {
+    // All mod dependencies are taken from the running server installation (flatDir in libs/):
+    // the exact destroy fork jar, petrolpark library, create (which bundles ponder/flywheel/
+    // registrate via jarjar) and JEI. Catnip comes bundled inside create's ponder jarjar.
+    implementation files('libs/destroy-1.21.1-0.4.1.jar')
+    implementation files('libs/petrolpark-1.21.1-1.5.1.jar')
+    implementation files('libs/create-1.21.1-6.0.10.jar')
+    implementation files('libs/ponder-neoforge-1.0.82.jar')
+    implementation files('libs/jei-1.21.1-neoforge-19.43.0.398.jar')
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    manifest.attributes([
+        "Implementation-Title"  : "dchem",
+        "Implementation-Version": version
+    ])
+}
